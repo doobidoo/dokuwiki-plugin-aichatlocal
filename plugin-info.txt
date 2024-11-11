@@ -1,0 +1,66 @@
+====== AIchatLocal Plugin ======
+
+---- plugin ----
+description: Adds support for local LLMs with OpenAI-compatible APIs to the AIChat plugin
+author     : Heinrich Krupp
+email      : heinich.krupp@gmail.com
+type       : action, helper
+lastupdate : 2024-11-11
+compatible : Kaos
+depends    : aichat
+conflicts  : 
+similar    : aichat
+tags       : !experimental, chatgpt, llm, ai, local, Ollama
+
+downloadurl: https://github.com/doobidoo/dokuwiki-plugin-aichatlocal/zipball/master
+bugtracker : https://github.com/doobidoo/dokuwiki-plugin-aichatlocal/issues
+sourcerepo : https://github.com/doobidoo/dokuwiki-plugin-aichatlocal/
+donationurl: 
+
+updatemessage: 
+
+screenshot_img : plugin:aichat.png
+
+tags     : ai, llm, chat, local, openai-compatible
+----
+
+===== Additional Plugin Information =====
+
+description: This plugin extends the AIChat plugin to support local Large Language Models (LLMs) that provide an OpenAI-compatible API interface. It enables organizations to use their own LLM deployments while maintaining compatibility with DokuWiki’s AIChat functionality.
+
+===== Installation Instructions =====
+
+  - Install the AIChat plugin if not already installed
+  - Install this plugin using the Plugin Manager
+  - Configure your local LLM endpoint in the Configuration Manager
+  - Select ‘local-chat’ as your model in AIChat settings
+
+===== Configuration =====
+
+The plugin requires minimal configuration:
+  - local_llm_baseurl: The base URL of your OpenAI-compatible API
+  - local_llm_apikey: API key if your local deployment requires authentication
+
+===== Requirements =====
+
+  * DokuWiki
+  * AIChat plugin
+  * PHP 7.4 or higher
+  * Local LLM with OpenAI-compatible API endpoints
+    * Must support /v1/chat/completions endpoint
+    * Should return responses in OpenAI format
+
+===== Features =====
+
+  * Seamless integration with AIChat plugin
+  * Support for local LLM deployments
+  * OpenAI-compatible API support
+  * Configurable base URL and authentication
+  * Token usage tracking (if supported by local LLM)
+  * Error handling and reporting
+
+===== Support =====
+
+  * Report issues on the bugtracker
+  * Join discussions in the DokuWiki forum
+  * Check documentation at https://www.dokuwiki.org/plugin:aichatlocal

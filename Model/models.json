@@ -1,0 +1,11 @@
+{
+    "chat": {
+        "local-chat": {
+            "description": "Local LLM with OpenAI-compatible API",
+            "inputTokens": 16000,
+            "inputTokenPrice": 0,
+            "outputTokens": 4096,
+            "outputTokenPrice": 0
+        }
+    }
+}
